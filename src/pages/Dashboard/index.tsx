@@ -7,7 +7,7 @@ import ModalAddFood from '../../components/ModalAddFood';
 import ModalEditFood from '../../components/ModalEditFood';
 import { FoodsContainer } from './styles';
 
-interface FoodsFormat {
+export interface FoodsFormat {
   available: boolean;
   description: string;
   id: number;
