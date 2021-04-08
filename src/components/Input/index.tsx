@@ -11,8 +11,9 @@ import { Container } from './styles';
 import { IconType } from 'react-icons';
 
 interface InputProps {
+  icon?: IconType;
   name: string;
-  icon: IconType;
+  placeholder?: string;
 }
 
 const Input = ({ name, icon: Icon, ...rest }: InputProps) => {
