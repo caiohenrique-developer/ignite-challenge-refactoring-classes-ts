@@ -3,6 +3,7 @@ import {
   useRef,
   useState,
   useCallback,
+  HTMLAttributes,
 } from 'react';
 
 import { useField } from '@unform/core';
@@ -10,7 +11,7 @@ import { useField } from '@unform/core';
 import { Container } from './styles';
 import { IconType } from 'react-icons';
 
-interface InputProps {
+interface InputProps extends HTMLAttributes<HTMLInputElement> {
   icon?: IconType;
   name: string;
   placeholder?: string;

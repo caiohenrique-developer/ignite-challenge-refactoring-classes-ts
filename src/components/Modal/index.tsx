@@ -10,12 +10,7 @@ interface ModalProps {
 function Modal({ children, isOpen, setIsOpen }: ModalProps) {
   const [modalStatus, setModalStatus] = useState(isOpen);
 
-  useEffect(() => {
-    if (!isOpen) {
-      console.log(isOpen)
-      setModalStatus(isOpen);
-    }
-  }, [isOpen]);
+  useEffect(() => { setModalStatus(isOpen); }, [isOpen]);
 
   return (
     <ReactModal
